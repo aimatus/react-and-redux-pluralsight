@@ -6,6 +6,7 @@ import Header from './components/ui/header/Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import PageNotFound from './components/page-not-found/PageNotFound';
+import CoursesPage from './components/courses/CoursesPage';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route path="/about" component={AboutPage} />
+        <Route path="/courses" component={CoursesPage} />
         <Route component={PageNotFound} />
       </Switch>
     </div>
